@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: anzo1;
+    src: url(./assets/file.woff2);
+}
+@font-face {
+    font-family: anzo2;
+    src: url(./assets/Wix_Madefor_Text/WixMadeforText-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: anzo3;
+    src: url(./assets/Bungee/Bungee-Regular.ttf);
+}
+@font-face {
+    font-family: anzo4;
+    src: url(./assets/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+*{
+    color: white;
+}
+
+#page1-in{
+    perspective: 1500px;
+}
+#section2{
+    perspective: 1500px;
+    position: relative;
+}
+
+#tiltDiv{
+    width: fit-content;
+}
