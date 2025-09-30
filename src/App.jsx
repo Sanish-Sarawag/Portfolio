@@ -1,26 +1,30 @@
 import React from 'react'
-import Page1 from './pages/Page1'
+
 import Header from './assets/components/Header'
 import Page2 from './pages/Page2'
 import Page3 from './pages/Page3'
-import Page4 from './pages/Page4'
+import About from './pages/About'
+import Loader from './pages/Loader'
+import Home from './pages/Home'
 import Page5 from './pages/Page5'
-import Page6 from './pages/Page6'
+import Project from './pages/Project'
+
 
 const App = () => {
-  
+
   return (
     <>
-    <div id="main">
+      <div id="main">
 
-      <Header/>
-      <Page1/>
-      <Page2/>
-      <Page3/>
-      <Page4/>
-      <Page5/>
-      <Page6/>
-    </div>
+        <Header />
+        <Home />
+        <Page2 />
+        <Page3 />
+        <Project />
+        <About />
+        <Loader />
+        <Page5/>
+      </div>
     </>
   )
 }

@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react'
 import React, { useState } from 'react'
 import gsap from 'gsap'
 
-const Page6 = () => {
+const Loader = () => {
  let [showContent, setShowContent] = useState(false);
   useGSAP(() => {
     const tl = gsap.timeline();
@@ -66,4 +66,4 @@ const Page6 = () => {
   )
 }
 
-export default Page6
+export default Loader

@@ -4,7 +4,7 @@ import Page1Bottom from "../assets/components/Page1Bottom";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
-const Page1 = () => {
+const Home = () => {
   const tiltRef = useRef(null);
   const [xVal, setXVal] = useState(0);
   const [yVal, setYVal] = useState(0);
@@ -42,8 +42,8 @@ const Page1 = () => {
   useEffect(() =>{
     const move = (e) => {
       gsap.to(lala.current, {
-        x: e.clientX - 38,
-        y: e.clientY - 715,
+        x: e.clientX - 25,
+        y: e.clientY - 700,
         duration: 2.5,
         ease:  "elastic.out(1,0.5)",
       });
@@ -57,7 +57,7 @@ const Page1 = () => {
 
   return (
     <div
-      id="page1"
+      id="home"
       onMouseMove={(e) => {
         mouseMoving(e);
       }}
@@ -71,9 +71,9 @@ const Page1 = () => {
         <TiltText abc={tiltRef} />
         <Page1Bottom />
       </div>
-      <div ref={lala} className='hill fixed bg-[#39FF14] w-5 h-5 items-center z-50 rounded-full'></div>
+      <div ref={lala} className='hill fixed bg-[#39FF14] w-3 h-3 items-center z-50 rounded-full'></div>
     </div>
   );
 };
 
-export default Page1;
+export default Home;
