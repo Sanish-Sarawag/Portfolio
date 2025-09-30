@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import TiltText from "../assets/components/TiltText";
 import Page1Bottom from "../assets/components/Page1Bottom";
 import { useGSAP } from "@gsap/react";
@@ -38,6 +38,23 @@ const Page1 = () => {
     [xVal, yVal]
   );
 
+    const lala = useRef(null);
+  useEffect(() =>{
+    const move = (e) => {
+      gsap.to(lala.current, {
+        x: e.clientX - 38,
+        y: e.clientY - 715,
+        duration: 2.5,
+        ease:  "elastic.out(1,0.5)",
+      });
+    }
+     window.addEventListener("mousemove", move);
+      return () => {
+      window.removeEventListener("mousemove", move);
+    };
+  }, []);
+  
+
   return (
     <div
       id="page1"
@@ -54,6 +71,7 @@ const Page1 = () => {
         <TiltText abc={tiltRef} />
         <Page1Bottom />
       </div>
+      <div ref={lala} className='hill fixed bg-[#39FF14] w-5 h-5 items-center z-50 rounded-full'></div>
     </div>
   );
 };
