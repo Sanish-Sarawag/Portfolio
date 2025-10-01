@@ -33,3 +33,7 @@
 #tiltDiv{
     width: fit-content;
 }
+
+.text-shadow-regal-blue {
+  text-shadow: 2px 2px 6px #3b82f6; /* blue shadow */
+}

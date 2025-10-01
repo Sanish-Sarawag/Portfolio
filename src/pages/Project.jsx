@@ -10,7 +10,7 @@ const Project = () => {
             <div className='m-6 group border-b-2 w-[30vw]'>
               <h1>GTA-VI</h1>
               <div className='bg-red-500 hidden absolute h-[56vh] group-hover:inline rounded-3xl left-[55vw] top-[12vh] w-[30vw]'>
-                <img src="/images/GTA-6.png" alt="" className='w-full h-full object-cover' />
+                <img src="/images/GTA-6.png" alt="" className='w-full h-full rounded-3xl object-cover' />
               </div>
             </div>
             <div className='m-6 group border-b-2 w-[30vw]'>

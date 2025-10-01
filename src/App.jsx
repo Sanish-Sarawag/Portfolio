@@ -6,8 +6,8 @@ import Page3 from './pages/Page3'
 import About from './pages/About'
 import Loader from './pages/Loader'
 import Home from './pages/Home'
-import Page5 from './pages/Page5'
 import Project from './pages/Project'
+import Marque from './pages/Marque'
 
 
 const App = () => {
@@ -18,12 +18,12 @@ const App = () => {
 
         <Header />
         <Home />
+        <Marque/>
+        <About />
         <Page2 />
         <Page3 />
         <Project />
-        <About />
         <Loader />
-        <Page5/>
       </div>
     </>
   )
